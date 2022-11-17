@@ -1,0 +1,63 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+
+.nav{
+ width: 300px;
+ height: 100%;
+ background-color: #0F3460;
+ font-family: 'Signika Negative', sans-serif;
+ position: absolute;
+}
+
+.nav p{
+    position: relative;
+    left: 110px;
+    font-family: 'Signika Negative', sans-serif;
+    color: antiquewhite;
+}
+
+.sub{
+    width: 300px;
+    height: 50px;
+    background-color: white;
+}
+
+.sub img{
+width: 52px;
+height: 44px;
+top: 14px;
+
+}
+
+.sub p{
+    position: absolute;
+    width: 196px;
+    height: 22px;
+    left: 66px;
+    top: 25px;
+    
+    font-family: 'Signika Negative';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 28px;
+    text-align: center;
+    
+    color: #000000;
+    
+}
+
+.asd{
+    background: #FFFFFF;
+    box-shadow: 9px 9px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 17px;
+    position: absolute;
+    width: 997px;
+    height: 655px;
+    left: 500px;
+    top: 25px;
+}
