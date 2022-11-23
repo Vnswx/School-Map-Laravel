@@ -1,0 +1,12 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+
+.contentback{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
