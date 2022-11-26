@@ -8,9 +8,10 @@ body{
 .nav{
     position: absolute;
     width: 400px;
-    height: 3000px;
+    height: 700px;
     left: 0px;
     top: 57px;
+    overflow: scroll;
     
     background: #082032;
 }
@@ -111,4 +112,9 @@ left: 1537px;
 top: 805px;
 
 background: #A6A6A6;
+}
+
+.nao{
+    position: sticky;
+    top: 10px;
 }
