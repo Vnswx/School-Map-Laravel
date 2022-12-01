@@ -235,3 +235,11 @@ text-align: center;
     left: 76%;
     top: 78%;
 }
+
+model-viewer{
+    right: 300px;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: -20px;
+}

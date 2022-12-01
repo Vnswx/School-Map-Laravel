@@ -9,6 +9,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script> 
+
+    <!--  OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+   <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+    <!--  OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+ <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script> 
+    
+    <!--  OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+
+   <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
     <title>Denah</title>
 </head>
 <body>
@@ -71,7 +82,8 @@
     <div class="asd">
         <p>Lab Cobaan</p>
             <div class="sad">
-        <img src="img/denah-11.png" alt="as">
+                <model-viewer src="Kelas.gltf" alt="A 3D model of a car" shadow-intensity="1" camera-controls >
+                </model-viewer>
     </div>
     </div>
     <div class="minimap">   
@@ -94,5 +106,14 @@
     <div class="sdaa">
         <img src="img/denah-11.png" alt="">
     </div>
+
+    <script type="module"
+		  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+	  </script>
+
+	<!-- Loads <model-viewer> for old browsers like IE11: -->
+	<script nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+	</script>
 </body> 
 </html>
