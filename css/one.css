@@ -73,6 +73,20 @@ body{
     margin-top: 4.9%;
 }
 
+.nav a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.nav a:focus{
+    color: red;
+}
+
+.nav p:focus{
+    background-color: white;
+}
+
 .sub{
     position: absolute;
     width: 24%;
