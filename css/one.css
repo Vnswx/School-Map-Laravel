@@ -15,7 +15,7 @@ body{
     
     position: absolute;
     width: 24%;
-    height: 850px;
+    height: 1023px;
     left: 0px;
     top: 57px;
     overflow-y: scroll;
@@ -26,22 +26,22 @@ body{
 
 .nav h1{
     position: relative;
-    left: 12%;
-    bottom: 19px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 180%;
+    left: 16%;
+    bottom: 20px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 36px;
     color: white;
     margin-top: 10%;
 }
 
 .nav h2{
     position: relative  ;
-    left: 14%;
-    bottom: 19px;
+    left: 20%;
+    bottom: 30px;
     font-family: 'Josefin Sans', sans-serif;
     color: white;
     font-weight: 200;
-    font-size: 25px;
+    font-size: 30px;
     line-height: 20px;
 
     color: black;
@@ -49,28 +49,29 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.85);
     height: 36px;
     width: 250px;
-    text-align: center;
+    text-align: left;   
     padding: 7px;
     background: #D8E3E7;
     margin-bottom: -4.8%;
-    margin-top: 4%;
+    margin-top: 5%;
 }
 
 .nav p{
     position: relative;
-    left: 14%;
-    bottom: 19px;
+    left: 20%;
+    bottom: 35px;
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 19px;
     color: white;
     
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.85);
-    height: 36px;
+    height: 40px;
     width: 250px;
     text-align: center;
     padding: 10px;
-    margin-bottom: -5.5%;
-    margin-top: 4.9%;
+    margin-bottom: -5.9%;
+    margin-top: 5.8%;
 }
 
 .nav a{
@@ -80,11 +81,15 @@ body{
 }
 
 .nav a:focus{
-    color: red;
+    color: #58a0ff;
 }
 
 .nav p:focus{
     background-color: white;
+}
+
+*:focus{
+    outline: none;
 }
 
 .sub{
@@ -166,9 +171,9 @@ border: 1px solid #000000;
 
 .minimap{
     position: absolute;
-width: 27%;
+width: 28%;
 height: 22%;
-left: 73%;
+left: 72%;
 top: 78%;
 
 background: #A6A6A6;
@@ -178,12 +183,12 @@ background: #A6A6A6;
     position: relative;
     width: 95%;
     height: 95%;
-    top: 10px;
-    left: 25px;
+    top: 8px;
+    left: 15px;
 
 }
 .nao{
-    top: 10 px;
+    top: 10px;
 }
 .sad{
     position: absolute;
@@ -262,12 +267,11 @@ text-align: center;
 }
 
 model-viewer{
-    right: 157px;
-    width: 808px;
-    height: 528px;
+    right: -13px;
+    width: 1075px;
+    height: 631px;
     position: absolute;
     top: -20px;
-    
 }
 
 .op{
