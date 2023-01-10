@@ -37,7 +37,7 @@
         <div class="nao">
             <h1>Gedung Teori</h1>
         <h2>Lantai 1</h2>
-        <p><a href="#">Ruang 1</a></p>
+        <button>Ruang 1</button>
         <p><a href="#">Ruang 2</a></p>
         <p><a href="#">Ruang 3</a></p>
         <p><a href="#">Ruang 4</a></p>
@@ -93,8 +93,12 @@
     <div class="asd">
         <p>Lab Cobaan</p>
             <div class="sad">
-                <model-viewer src="Kelas.gltf" alt="Denah" shadow-intensity="1" camera-controls >
+                <model-viewer src="Kelas.gltf" alt="Denah" shadow-intensity="2" camera-controls auto-rotate ar>
+                    <button id="hotspotButton"
+                    slot="hotspot-one"
+                    data-position="..." data-normal="...">OOMaga</button>
                 </model-viewer>
+                
     </div>
     </div>
     <div class="minimap">
@@ -126,5 +130,28 @@
 	<script nomodule
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
 	</script>
+
+<script>
+    hotspotButton.addEventListener('click', () => {
+      if (modelViewer.paused) {
+        modelViewer.play();
+      } else {
+        modelViewer.pause();
+      }
+    });
+    </script>
+
+<script type="module">
+    const modelViewer = document.querySelector("model-viewer"); window.switchSrc = (element, name) => { const base = "../Assets/Models/" + name; modelViewer.src = base + '.glb'; const size = document.querySelectorAll(".size"); size.forEach((element) => {element.classList.remove("selected");
+    var colors = document.getElementById("variant"); var colorButton = colors.firstChild; while( colorButton ) { colors.removeChild( colorButton ); colorButton = colors.firstChild; }}); element.classList.add("selected"); }; document.querySelector(".sizebuttons").addEventListener('beforexrselect',
+    (ev) => { ev.preventDefault(); });
+  </script>
+  
+  <!-- Color Script -->
+  <script type="module">
+    const modelViewerVariants = document.querySelector("model-viewer"); const select = document.querySelector('#variant'); modelViewerVariants.addEventListener('load', () => { const names = modelViewerVariants.availableVariants; for (const name of names)
+    { const color = document.createElement('button'); color.value = name; color.textContent = name; select.appendChild(color); } }); document.getElementById('variant').addEventListener('click', (event) => { modelViewerVariants.variantName = event.target.value;
+    });
+  </script>
 </body> 
 </html>

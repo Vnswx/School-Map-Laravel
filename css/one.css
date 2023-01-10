@@ -74,6 +74,28 @@ body{
     margin-top: 5.8%;
 }
 
+.nav button{
+    position: relative;
+    left: 14%;
+    bottom: 19px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: blue;
+    background-color: aqua;
+    
+    box-sizing: border-box;
+    border: 1px solid black;
+    height: 36px;
+    width: 250px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: -5.5%;
+    margin-top: 4.9%;
+}
+
+.nav button:focus{
+    background-color: white;
+}
+
 .nav a{
     text-decoration: none;
     color: white;
