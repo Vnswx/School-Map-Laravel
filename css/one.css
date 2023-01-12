@@ -82,7 +82,7 @@ body{
     background-color: aqua;
     
     box-sizing: border-box;
-    border: 1px solid black;
+    border: 2px solid black;
     height: 36px;
     width: 250px;
     text-align: center;
