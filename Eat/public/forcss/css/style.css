@@ -1,0 +1,160 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #00337C;
+}
+
+.nav{
+    top: 0;
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    background-color: #00337C;
+}
+
+.nav h1{
+    top: 2%;
+    position: relative;
+    font-size: 130%;
+    left: 33%;
+    font-family: 'Signika', sans-serif;
+    color: white;
+}
+
+.nav img{
+    left: 5%;
+    position: absolute;
+    width: 25%;
+    height: 10%;
+}
+
+
+.nav h2{
+    top: 20%;
+    position: relative;
+    left: 35%;
+    font-size: 120%;
+    font-family: 'Signika', sans-serif;
+    color: white;
+}
+
+.nav hr{
+    position: relative;
+    top: 20%;
+}
+
+.nav a{
+    position: relative;
+    display: block;
+    margin-bottom: 10%;
+    font-size: 30px;
+    /* left: 35%; */
+    padding-left: 20%;
+    top: 25%;
+    font-family: 'Signika', sans-serif;
+    text-decoration: none;
+    color: #7286D3;
+    font-weight: bold;
+    --b: 0.1em;   /* the thickness of the line */
+    --c: white; /* the color */
+    
+    color: #0000;
+    padding-block: var(--b);
+    background: 
+      linear-gradient(var(--c) 50%, #1095c1 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+      linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+}
+
+.nav a:hover{
+    --_p: 100%;
+    --_s: .3s;
+}
+
+.nav a:focus{
+    background-color: #205295;
+}
+
+.nav p{
+    position: relative;
+    top: 40%;
+    padding-left: 18%;
+    color: grey;
+}
+.container{
+    position: absolute;
+    background-color: white;
+    left: 20%;
+    top: 0;
+    width: 80%;
+    border-top-left-radius: 4%;
+    border-bottom-left-radius: 4%;
+    height: 100%;
+}
+
+.container h1{
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    font-size: 170%;
+    font-family: 'Signika', sans-serif;
+}
+
+.container hr{
+    position: relative;
+    top: 15%;
+    width: 80%;
+    
+}
+
+.container h2{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-family: 'Signika', sans-serif;
+}
+
+.container button{
+    position: absolute;
+    left: 75%;
+    top: 80%;
+    width: 15%;
+    height: 5%;
+    font-family: 'Signika', sans-serif;
+    font-size: 110%;
+    font-weight: bold;
+    background-color: grey;
+    border-radius: 9%;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+.container button:hover{
+    background-color: #7286D3;
+}
+
+.center{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 80%;
+    height: 50%;
+    background-color: white;
+}
+
+.center table th{
+    position: relative;
+    font-size: 110%;
+    border-bottom: 1px solid Black;
+    font-family: 'Signika', sans-serif;
+    left: 5%;
+}
+
+.center td{
+    position: relative;
+    margin-left: 400px;
+    left: 5%;
+    top: 3%;
+}
