@@ -35,35 +35,27 @@
         <div class="center">
 
 
-            <table>
-                <tr>
-                    <th>Ruang 1</th>
-                    <th>Ruang 2</th>
-                    <th>Ruang 3</th>
-                    <th>Ruang 4</th>
-                </tr>
-                <tr>
-                    <td>Nama Walas 
-                        Kelas
-                        jam belajar
-                    </td>
-                    <td>Nama Walas 
-                        Kelas
-                        jam belajar
-                    </td>
-                    <td>Nama Walas 
-                        Kelas
-                        jam belajar
-                    </td>
-                    <td>Nama Walas 
-                        Kelas
-                        jam belajar
-                    </td>
-                </tr>
-            </table>
+                <div class="square">
+               <div class="h1">Ruang 1</div>
+               <div class="oi">
+                <h2>Nama Walas :</h2>
+                <h2>Kelas :</h2>
+                <h2>Jam Belajar :</h2>
+               </div>
+                </div>
+                
+                <div class="square2">
+                    <div class="h12">Ruang 1</div>
+                    <div class="oi2">
+                        <h2>Nama Walas :</h2>
+                        <h2>Kelas :</h2>
+                        <h2>Jam Belajar :</h2>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+            <button>Next</button>
         </div>
-        
-        <button>Next</button>
-    </div>
 </body>
 </html>

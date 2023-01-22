@@ -137,24 +137,109 @@ body{
 
 .center{
     position: absolute;
-    top: 35%;
+    top: 32%;
     left: 10%;
     width: 80%;
     height: 50%;
     background-color: white;
+    display: flex;
+    left: 7%;
 }
 
-.center table th{
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans');
+
+
+
+.square:hover {
+    -webkit-transform: translate(20px, -10px);
+    -ms-transform: translate(10px, -10px);
+    transform: translate(10px, -10px);
+    -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+     }
+
+
+.square{
     position: relative;
-    font-size: 110%;
-    border-bottom: 1px solid Black;
-    font-family: 'Signika', sans-serif;
-    left: 5%;
+  width: 25%;
+	height: 80%;
+	background: white;
+  border-radius: 4px;
+  box-shadow: 0px 20px 50px #D9DBDF;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; 
+  left: 4%;
 }
 
-.center td{
+
+.h1{
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 24px;
+  border-bottom: black 1px solid;
+}
+
+
+
+.oi h2{
+    padding-top: 3%;
     position: relative;
-    margin-left: 400px;
-    left: 5%;
-    top: 3%;
+    text-align: justify;
+    line-height: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    left: 0;
+    font-size: 120%;
+}
+
+.square2:hover {
+    -webkit-transform: translate(20px, -10px);
+    -ms-transform: translate(10px, -10px);
+    transform: translate(10px, -10px);
+    -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+     }
+
+
+.square2{
+    position: relative;
+  width: 25%;
+	height: 80%;
+	background: white;
+  border-radius: 4px;
+  box-shadow: 0px 20px 50px #D9DBDF;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; 
+  left: 10%;
+}
+
+
+.h12{
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 24px;
+  border-bottom: black 1px solid;
+}
+
+p{
+ text-align: justify; 
+ padding-left: 30px;
+ padding-right: 30px;
+ font-family: 'Open Sans', sans-serif;
+ font-size: 12px;
+ color: #C8C8C8;
+ line-height: 18px;
+}
+
+.oi2 h2{
+    padding-top: 3%;
+    position: relative;
+    text-align: justify;
+    line-height: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    left: 0;
+    font-size: 120%;
 }
