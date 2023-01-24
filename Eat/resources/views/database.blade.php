@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="nav">
-        <img src="{{ asset('forcss/img/logo-tb.png') }}" alt="">
+        <img src="{{ asset('forcss/img/Group 705.png') }}" alt="">
         <h1>SMK Taruna Bhakti</h1>
         <h2>Admin Guru</h2>
 
@@ -41,6 +41,8 @@
                 <h2>Nama Walas :</h2>
                 <h2>Kelas :</h2>
                 <h2>Jam Belajar :</h2>
+                <a href=""><span class="material-symbols-outlined">delete</span></a>
+               <!-- <a class="2nd" href=""><span class="material-symbols-outlined">add</span></a> -->
                </div>
                 </div>
                 
@@ -50,12 +52,34 @@
                         <h2>Nama Walas :</h2>
                         <h2>Kelas :</h2>
                         <h2>Jam Belajar :</h2>
+                        <a href=""><span class="material-symbols-outlined">delete</span></a>
                     </div>
                 </div>
                 
+                <div class="square3">
+                    <div class="h123">Ruang 1</div>
+                    <div class="oi23">
+                        <h2>Nama Walas :</h2>
+                        <h2>Kelas :</h2>
+                        <h2>Jam Belajar :</h2>
+                        <a href=""><span class="material-symbols-outlined">delete</span></a>
+                    </div>
+                </div>
+
+                <div class="square4">
+                    <div class="h1234">Ruang 1</div>
+                    <div class="oi234">
+                        <h2>Nama Walas :</h2>
+                        <h2>Kelas :</h2>
+                        <h2>Jam Belajar :</h2>
+                        <a href=""><span class="material-symbols-outlined">delete</span></a>
+                    </div>
+                </div>
             </div>
             </div>
-            <button>Next</button>
+            <div class="buttonnext">
+            <a href=""><span class="material-symbols-outlined">chevron_right</span></a>
+            </div>
         </div>
 </body>
 </html>
