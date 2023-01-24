@@ -41,8 +41,8 @@
                 <h2>Nama Walas :</h2>
                 <h2>Kelas :</h2>
                 <h2>Jam Belajar :</h2>
-                <a href=""><span class="material-symbols-outlined">delete</span></a>
-               <!-- <a class="2nd" href=""><span class="material-symbols-outlined">add</span></a> -->
+                <a href="" class="w"><span class="material-symbols-outlined">delete</span></a>
+               <a class="z" href=""><span class="material-symbols-outlined">add</span></a> 
                </div>
                 </div>
                 
@@ -52,7 +52,8 @@
                         <h2>Nama Walas :</h2>
                         <h2>Kelas :</h2>
                         <h2>Jam Belajar :</h2>
-                        <a href=""><span class="material-symbols-outlined">delete</span></a>
+                        <a href="" class="q"><span class="material-symbols-outlined">delete</span></a>
+                        <a class="x" href=""><span class="material-symbols-outlined">add</span></a> 
                     </div>
                 </div>
                 
@@ -62,7 +63,8 @@
                         <h2>Nama Walas :</h2>
                         <h2>Kelas :</h2>
                         <h2>Jam Belajar :</h2>
-                        <a href=""><span class="material-symbols-outlined">delete</span></a>
+                        <a href="" class="e"><span class="material-symbols-outlined">delete</span></a>
+                        <a class="c" href=""><span class="material-symbols-outlined">add</span></a> 
                     </div>
                 </div>
 
@@ -72,7 +74,8 @@
                         <h2>Nama Walas :</h2>
                         <h2>Kelas :</h2>
                         <h2>Jam Belajar :</h2>
-                        <a href=""><span class="material-symbols-outlined">delete</span></a>
+                        <a href="" class="r"><span class="material-symbols-outlined">delete</span></a>
+                        <a class="v" href=""><span class="material-symbols-outlined">add</span></a> 
                     </div>
                 </div>
             </div>
