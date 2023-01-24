@@ -2,7 +2,7 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #00337C;
+    background-color: #2C3E50;
 }
 
 .nav{
@@ -10,23 +10,24 @@ body{
     position: absolute;
     width: 20%;
     height: 100%;
-    background-color: #00337C;
+    background-color: #2C3E50;
 }
 
 .nav h1{
-    top: 2%;
+    top: 1%;
     position: relative;
-    font-size: 130%;
-    left: 33%;
+    font-size: 180%;
+    left: 25%;
     font-family: 'Signika', sans-serif;
     color: white;
 }
 
 .nav img{
     left: 5%;
+    top: 2%;
     position: absolute;
-    width: 25%;
-    height: 10%;
+    width: 15%;
+    height: 5%;
 }
 
 
@@ -57,12 +58,12 @@ body{
     color: #7286D3;
     font-weight: bold;
     --b: 0.1em;   /* the thickness of the line */
-    --c: white; /* the color */
+    --c: #345B63; /* the color */
     
     color: #0000;
     padding-block: var(--b);
     background: 
-      linear-gradient(var(--c) 50%, #1095c1 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+      linear-gradient(var(--c) 50%, white 0) 0% calc(100% - var(--_p,0%))/100% 200%,
       linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
     -webkit-background-clip: text,padding-box;
             background-clip: text,padding-box;
@@ -80,8 +81,9 @@ body{
 
 .nav p{
     position: relative;
-    top: 40%;
-    padding-left: 18%;
+    font-size: 100%;
+    top: 55%;
+    padding-left: 15.5%;
     color: grey;
 }
 .container{
@@ -193,6 +195,12 @@ body{
     font-size: 120%;
 }
 
+.square a span{
+    position: absolute;
+    top: 85%;
+    left: 80%;
+}
+
 .square2:hover {
     -webkit-transform: translate(20px, -10px);
     -ms-transform: translate(10px, -10px);
@@ -212,7 +220,7 @@ body{
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; 
-  left: 10%;
+  left: 6%;
 }
 
 
@@ -242,4 +250,106 @@ p{
     padding-right: 20px;
     left: 0;
     font-size: 120%;
+}
+
+.square2 a span{
+    position: absolute;
+    top: 85%;
+    left: 80%;
+}
+
+.square3{
+    position: relative;
+  width: 25%;
+	height: 80%;
+	background: white;
+  border-radius: 4px;
+  box-shadow: 0px 20px 50px #D9DBDF;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; 
+  left: 8%;
+}
+
+.h123{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 24px;
+    border-bottom: black 1px solid;
+  }
+
+  .oi23 h2{
+    padding-top: 3%;
+    position: relative;
+    text-align: justify;
+    line-height: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    left: 0;
+    font-size: 120%;
+  }
+
+  .square3:hover {
+    -webkit-transform: translate(20px, -10px);
+    -ms-transform: translate(10px, -10px);
+    transform: translate(10px, -10px);
+    -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+     }
+
+     .square3 a span{
+        position: absolute;
+        top: 85%;
+        left: 80%;
+    }
+
+.square4{
+    position: relative;
+  width: 25%;
+	height: 80%;
+	background: white;
+  border-radius: 4px;
+  box-shadow: 0px 20px 50px #D9DBDF;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; 
+  left: 10%;
+}
+
+.h1234{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 24px;
+    border-bottom: black 1px solid;
+  }
+
+  .oi234 h2{
+    padding-top: 3%;
+    position: relative;
+    text-align: justify;
+    line-height: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    left: 0;
+    font-size: 120%;
+  }
+
+  .square4:hover {
+    -webkit-transform: translate(20px, -10px);
+    -ms-transform: translate(10px, -10px);
+    transform: translate(10px, -10px);
+    -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+     }
+
+     .square4    a span{
+        position: absolute;
+        top: 85%;
+        left: 80%;
+    }
+.buttonnext{
+    position: absolute;
+    background-color: antiquewhite;
+    top: 94%;
+    left: 90%;
 }
