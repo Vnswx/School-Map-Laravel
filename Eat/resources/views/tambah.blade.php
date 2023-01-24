@@ -11,6 +11,7 @@
     <div class="container">
         <h4 class="y">Lantai 2</h4>
         <h4 class="a">Gedung Teori</h4>
+        <h4 class="b1">Ruang 1</h4>
         <hr>
         <form action="#">
             <label for="1" class="c">Wali Kelas:</label>
@@ -27,18 +28,27 @@
             <br>
             <br>
             <br>
-            <label for="3" class="b">Jam Mulai:</label>
+            <label class="AT1" for="3" class="b">Jam Mulai:</label>
             <br>
             <br>
-            <input type="number" id="3" name="3" placeholder="Jam Mulai">
+            <input class="A1" type="number" id="3" name="3" placeholder="Jam Mulai">
             <br>
             <br>
             <br>
-            <label for="3" class="n">Jam Akhir:</label>
+            <label class="AT2" for="3" class="n">Jam Akhir:</label>
             <br>
             <br>
-            <input type="number" id="4" name="4" placeholder="Jam Akhir">
+            <input class="A2" type="number" id="4" name="4" placeholder="Jam Akhir">
         </form>
+    </div>
+    <div class="container2">
+        <h4 class="TDL">Upload File:</h4>
+        <input class="TD" type="file" placeholder="File 3D"> 
+        <input class="TD2" type="file" placeholder="File 3D">
+        <a href="#"><span class="material-symbols-outlined">
+arrow_back
+</span></a>
+
     </div>
 </body>
 </html>
