@@ -14,9 +14,9 @@ body{
 }
 
 .nav h1{
-    top: 1%;
+    top: 0%;
     position: relative;
-    font-size: 180%;
+    font-size: 170%;
     left: 25%;
     font-family: 'Signika', sans-serif;
     color: white;
@@ -82,7 +82,7 @@ body{
 .nav p{
     position: relative;
     font-size: 100%;
-    top: 55%;
+    top: 40%;
     padding-left: 15.5%;
     color: grey;
 }
@@ -195,10 +195,16 @@ body{
     font-size: 120%;
 }
 
-.square a span{
+.w span{
     position: absolute;
     top: 85%;
     left: 80%;
+}
+
+.z span{
+  position: absolute;
+  top: 85%;
+  left: 5%;
 }
 
 .square2:hover {
@@ -252,10 +258,16 @@ p{
     font-size: 120%;
 }
 
-.square2 a span{
+.q span{
     position: absolute;
     top: 85%;
     left: 80%;
+}
+
+.x span{
+  position: absolute;
+  top: 85%;
+  left: 5%;
 }
 
 .square3{
@@ -297,10 +309,16 @@ p{
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
      }
 
-     .square3 a span{
+     .e span{
         position: absolute;
         top: 85%;
         left: 80%;
+    }
+
+    .c span{
+      position: absolute;
+      top: 85%;
+      left: 5%;
     }
 
 .square4{
@@ -342,11 +360,17 @@ p{
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
      }
 
-     .square4    a span{
+     .r span{
         position: absolute;
         top: 85%;
         left: 80%;
     }
+    .v span{
+      position: absolute;
+      top: 85%;
+      left: 5%;
+    }
+
 .buttonnext{
     position: absolute;
     background-color: antiquewhite;
