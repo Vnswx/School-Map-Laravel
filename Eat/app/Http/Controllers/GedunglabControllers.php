@@ -19,6 +19,12 @@ class GedunglabControllers extends Controller
         return view('gedunglab', compact('dtgedunglab'));
     }
 
+    public function denah()
+    {
+        $dtgedunglab = enter::all();
+        return view('denah', compact('dtgedunglab'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -40,6 +46,7 @@ class GedunglabControllers extends Controller
         // dd($request->all());
         enter::create([
             'id' => $request->id,
+            'ruang' => $request->ruang,
             'walas' => $request->walas,
             'kelas' => $request->kelas,
             'jammulai' => $request->jammulai,

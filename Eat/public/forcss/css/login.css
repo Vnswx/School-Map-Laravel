@@ -16,6 +16,17 @@ body{
     background-color: whitesmoke;
 }
 
+
+.pulse{
+    position: absolute;
+    top: 65%;
+    left: 17%;
+    width: 20%;
+    height: 7%;
+    overflow: hidden;
+}
+
+
 form{
     position: relative;
     top: 15%;

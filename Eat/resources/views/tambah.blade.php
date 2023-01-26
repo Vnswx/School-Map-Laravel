@@ -14,6 +14,13 @@
         <hr>
         <form action="{{ route('simpan') }}" method="post">
             {{ csrf_field() }}
+            <label for="0" class="c">Ruang:</label>
+            <br>
+            <br>
+            <input type="text" name="ruang" id="ruang" placeholder="Ruang">
+            <br>
+            <br>
+            <br>
             <label for="1" class="c">Wali Kelas:</label>
             <br>
             <br>

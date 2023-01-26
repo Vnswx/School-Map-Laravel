@@ -10,5 +10,5 @@ class gedunglab extends Model
     protected $table = "denah";   
     protected $primarykey = "id";   
     protected $fillable = [
-    'id', 'walas', 'kelas', 'jammulai', 'jamakhir']; 
+    'id', 'ruang', 'walas', 'kelas', 'jammulai', 'jamakhir']; 
 }

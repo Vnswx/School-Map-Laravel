@@ -24,7 +24,8 @@
                     <i></i>
                   </span>
               </div>
-        </form>
+            </form>
+            <button class="pulse">Login</button>
     </div>
 </body>
 </html>

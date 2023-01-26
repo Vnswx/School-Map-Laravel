@@ -106,22 +106,25 @@
         <div class="sdaa"></div>   
     </div>
     <div class="bawah">
+        @foreach ($dtgedunglab as $item)
+            
         <p>Ruang 28</p>
         <br>
-        <p>Ruang Belajar Mengajar</p>
+        <p>{{ $item->walas }}</p>
     </div>
     <div class="bawah2">
         <p>Jam Belajar</p>
         <br>
-        <p>07:00 - 14:50</p>
+        <p>{{ $item->jammulai }} &nbsp; {{ $item->jamakhir }}</p>
     </div>
     <div class="bawah3">
         <p>Jurusan</p>
         <br>
-        <p>X PPLG 1</p>
+        <p>{{ $item->kelas }}</p>
     </div>
+    @endforeach
     <script type="module"
-		  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
 	  </script>
 
 	<!-- Loads <model-viewer> for old browsers like IE11: -->

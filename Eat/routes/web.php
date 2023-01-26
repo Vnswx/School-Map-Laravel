@@ -15,9 +15,10 @@ use App\Http\Controllers\GedunglabControllers;
 */
 
 Route::get('/', function (){
-    return view('denah');
+    return view('welcome');
 });
 
+Route::get('/denah', [GedunglabControllers::class, 'denah'])->name('denah');
 Route::get('/gedunglab', [GedunglabControllers::class, 'index'])->name('gedunglab');
 Route::get('/tambah', [GedunglabControllers::class, 'create'])->name('tambah');
 Route::post('/simpan', [GedunglabControllers::class, 'store'])->name('simpan');

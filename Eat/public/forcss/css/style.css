@@ -171,7 +171,8 @@ body{
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; 
-  left: 4%;
+  left: 2%;
+  margin-left: 2%;
 }
 
 
