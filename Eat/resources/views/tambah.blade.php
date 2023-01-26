@@ -11,7 +11,6 @@
     <div class="container">
         <h4 class="y">Lantai 2</h4>
         <h4 class="a">Gedung Teori</h4>
-        <h4 class="b1">Ruang 1</h4>
         <hr>
         <form action="#">
             <label for="1" class="c">Wali Kelas:</label>
@@ -45,9 +44,7 @@
         <h4 class="TDL">Upload File:</h4>
         <input class="TD" type="file" placeholder="File 3D"> 
         <input class="TD2" type="file" placeholder="File 3D">
-        <a href="#"><span class="material-symbols-outlined">
-arrow_back
-</span></a>
+        <a href="#"><span class="material-symbols-outlined">arrow_back</span></a>
 
     </div>
 </body>
