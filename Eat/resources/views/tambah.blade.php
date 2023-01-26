@@ -11,7 +11,6 @@
     <div class="container">
         <h4 class="y">Lantai 2</h4>
         <h4 class="a">Gedung Teori</h4>
-        <h4 class="b1">Ruang 1</h4>
         <hr>
         <form action="{{ route('simpan') }}" method="post">
             {{ csrf_field() }}
