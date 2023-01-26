@@ -20,16 +20,27 @@ body{
 .pulse{
     position: absolute;
     top: 65%;
-    left: 17%;
+    left: 16%;
     width: 20%;
     height: 7%;
     overflow: hidden;
+    color: #333;
+    background-color: #205295;
+    animation: ease-in-out 0.5;
+    font-size: large;
+    font-weight: bolder;
 }
 
+.pulse:hover{
+    background-color: #6FEDD6;
+	color: white;
+	transition: 0.5s;
+	cursor: pointer;
+}
 
 form{
     position: relative;
-    top: 15%;
+    top: 17%;
     left: 0;
 }
 
@@ -46,13 +57,13 @@ form{
     position: absolute;
     left: 13%;
     margin-top: 11%;
-    font-size: 120%;
+    font-size: 140%;
 }
 
 .l1{
     position: absolute;
     left: 13%;
-    font-size: 120%;
+    font-size: 140%;
 }
 
 .col-3{
@@ -84,3 +95,41 @@ input[type="password"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; w
 .effect-7:focus ~ .focus-border i:before,
 .effect-7:focus ~ .focus-border i:after{top: 0; height: 100%; transition: 0.6s;}
 
+
+.imgs{
+    position: absolute;
+    left: 52%;
+    top: 10%;
+    opacity: 0.3;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+}
+
+.imgs:hover{
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+}
+
+.kik{
+    position: absolute;
+    width: 10%;
+    left: 89%;
+    top: 76%;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+}
+
+.kik:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+}

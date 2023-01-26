@@ -15,7 +15,7 @@ use App\Http\Controllers\GedunglabControllers;
 */
 
 Route::get('/', function (){
-    return view('welcome');
+    return view('Login');
 });
 
 Route::get('/denah', [GedunglabControllers::class, 'denah'])->name('denah');

@@ -12,20 +12,23 @@
         <form action="">
             <label class="l1" for="effect-7">Email:</label>
             <div class="col-3">
-                <input class="effect-7" type="email" placeholder="Email">
+                <input class="effect-7" type="Email" placeholder="Email">
                   <span class="focus-border">
                     <i></i>
                   </span>
               </div>
               <label class="l2" for="effectx-7">Password:</label>
               <div class="col-4">
-                <input class="effect-7" id="os" type="password" placeholder="password">
+                <input class="effect-7" id="os" type="password" placeholder="Password">
                   <span class="focus-border">
                     <i></i>
                   </span>
               </div>
             </form>
             <button class="pulse">Login</button>
+
+            <img class="imgs" src="{{ asset('forcss/img/logo-tb.png') }}" alt="">
+            <img class="kik" src="{{ asset('forcss/img/maskot1.png') }}" alt="">
     </div>
 </body>
 </html>
