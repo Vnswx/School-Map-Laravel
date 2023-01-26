@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GedunglabControllers;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('gedunglab');
+    return view('denah');
 });
+
+Route::get('/gedunglab', [GedunglabControllers::class, 'index'])->name('gedunglab');
+Route::get('/tambah', [GedunglabControllers::class, 'create'])->name('tambah');
+Route::post('/simpan', [GedunglabControllers::class, 'store'])->name('simpan');
+Route::get('/delete/{id}', [GedunglabControllers::class, 'destroy'])->name('delete');
