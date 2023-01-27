@@ -93,8 +93,8 @@ form input{
     border: 1px black;
     background-color: white;
 
-    left: 50%;
-    top: 30%;
+    left: 55%;
+    top: 32.5%;
 }
 
 .TD2{
@@ -105,17 +105,41 @@ form input{
     border: 1px black;
     background-color: white;
 
-    left: 50%;
-    top: 40%;
+    left: 55%;
+    top: 45%;
 }
 
 .TDL{
     position: absolute;
-    left: 50%;
+    left: 55%;
     top: 25%;
 }
 
 form{
     position: relative;
     top: 6%;
+    left: 5%;
+}
+
+button{
+    position: absolute;
+    top: 95%;
+    left: 70%;
+    width: 20%;
+    height: 10%;
+    border-radius: 3px;
+    overflow: hidden;
+    color: white;
+    background-color: #205295;
+    animation: ease-in-out 0.5;
+    font-size: large;
+    font-weight: bolder;
+}
+
+button:hover{
+    background-color: #6FEDD6;
+	color: black;
+	transition: 0.5s;
+	cursor: pointer;
+    border: white;
 }

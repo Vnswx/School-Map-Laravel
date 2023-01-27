@@ -83,7 +83,7 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     color: white;
     font-weight: bold;
-    background-color: blue;
+    background-color: #58a0ff;
     
     box-sizing: border-box;
     border: 2px solid black;
@@ -106,6 +106,7 @@ body{
     color: white;
     
 }
+
 
 .nav a:focus{
     color: #58a0ff;

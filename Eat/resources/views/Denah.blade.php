@@ -37,54 +37,54 @@
         <div class="nao">
             <h1>Gedung Teori</h1>
         <h2>Lantai 1</h2>
-        <a href="welcome"><button>Ruang 1</button></a>
-        <a href="#"><button>Ruang 2</button></a>
-        <a href="#"><button>Ruang 3</button></a>
-        <a href="#"><button>Ruang 4</button></a>
+        <a href="welcome" class="a6"><button>Ruang 1</button></a>
+        <a href="#" class="a6"><button>Ruang 2</button></a>
+        <a href="#" class="a6"><button>Ruang 3</button></a>
+        <a href="#" class="a6"><button>Ruang 4</button></a>
         <h2>Lantai 2</h2>
-        <a href=""><button>Ruang 5</button></a>
-        <a href=""><button>Ruang 6</button></a>
-        <a href=""><button>Ruang 7</button></a>
-        <a href=""><button>Ruang 8</button></a>
+        <a href="" class="a6"><button>Ruang 5</button></a>
+        <a href="" class="a6"><button>Ruang 6</button></a>
+        <a href="" class="a6"><button>Ruang 7</button></a>
+        <a href="" class="a6"><button>Ruang 8</button></a>
         <h2>Lantai 3</h2>
-        <a href=""><button>Ruang 9</button></a>
-        <a href=""><button>Ruang 10</button></a>
-        <a href=""><button>Ruang 11</button></a>
+        <a href="" class="a6"><button>Ruang 9</button></a>
+        <a href="" class="a6"><button>Ruang 10</button></a>
+        <a href="" class="a6"><button>Ruang 11</button></a>
         <a href=""><button>Ruang 12</button></a>
         <h2> Lantai 4</h2>
-        <a href=""><button>Ruang 13</button></a>
-        <a href=""><button>Ruang 14</button></a>
-        <a href=""><button>Ruang 15</button></a>
-        <a href=""><button>Ruang 16</button></a>
+        <a href=""  class="a6"class="a6"><button>Ruang 13</button></a>
+        <a href=""  class="a6"class="a6"><button>Ruang 14</button></a>
+        <a href=""  class="a6"class="a6"><button>Ruang 15</button></a>
+        <a href=""  class="a6"class="a6"><button>Ruang 16</button></a>
             <h1>Gedung Lab</h1>
         <h2>Lantai 1</h2>
-        <a href=""><button>Lab BRF R28</button></a>
-        <a href=""><button>Tata Usaha</button></a>
-        <a href=""><button>Sarpras</button></a>
+        <a href=""  class="a6"class="a6"><button>Lab BRF R28</button></a>
+        <a href=""  class="a6"class="a6"><button>Tata Usaha</button></a>
+        <a href=""  class="a6"class="a6"><button>Sarpras</button></a>
         <h2>Lantai 2</h2>
-        <a href=""><button>Ruang 24</button></a>
-        <a href=""><button>Ruang 25</button></a>
-        <a href=""><button>Data Center TJKT</button></a>
-        <a href=""><button>Ruang BK</button></a>
+        <a href="" class="a6"><button>Ruang 24</button></a>
+        <a href="" class="a6"><button>Ruang 25</button></a>
+        <a href="" class="a6"><button>Data Center TJKT</button></a>
+        <a href="" class="a6"><button>Ruang BK</button></a>
         <h2>Lantai 3</h2>
-        <a href=""><button>Ruang 21</button></a>
-        <a href=""><button>Ruang 22</button></a>
-        <a href=""><button>Ruang 23</button></a>
-        <a href=""><button>Ruang MPK/OSIS</button></a>
+        <a href="" class="a6"><button>Ruang 21</button></a>
+        <a href="" class="a6"><button>Ruang 22</button></a>
+        <a href="" class="a6"><button>Ruang 23</button></a>
+        <a href="" class="a6"><button>Ruang MPK/OSIS</button></a>
         <h2>Lantai 4</h2>
-        <a href=""><button>Ruang 17</button></a>
-        <a href=""><button>Ruang 18</button></a>
-        <a href=""><button>Ruang 19</button></a>
-        <a href=""><button>Ruang 20</button></a>
+        <a href="" class="a6"><button>Ruang 17</button></a>
+        <a href="" class="a6"><button>Ruang 18</button></a>
+        <a href="" class="a6"><button>Ruang 19</button></a>
+        <a href="" class="a6"><button>Ruang 20</button></a>
             <h1>Gedung RPS</h1>
         <h2>Lantai 1</h2>
-        <a href=""><button>Ruang 29</button></a>
-        <a href=""><button>Ruang 30</button></a>
-        <a href=""><button>RPS TE 1</button></a>
-        <a href=""><button>Studio BRF</button></a>
+        <a href="" class="a6"><button>Ruang 29</button></a>
+        <a href="" class="a6"><button>Ruang 30</button></a>
+        <a href="" class="a6"><button>RPS TE 1</button></a>
+        <a href="" class="a6"><button>Studio BRF</button></a>
         <h2>Lantai 2</h2>
-        <a href=""><button>RPS TE 2</button></a>
-        <a href=""><button>Data Center Animasi</button></a>
+        <a href="" class="a6"><button>RPS TE 2</button></a>
+        <a href="" class="a6"><button>Data Center Animasi</button></a>
         </div>
     </div>  
     <div class="sda"></div>
@@ -110,7 +110,7 @@
             
         <p>Ruang 28</p>
         <br>
-        <p>{{ $item->walas }}</p>
+        <p>{{ $item->id }}</p>
     </div>
     <div class="bawah2">
         <p>Jam Belajar</p>
@@ -120,7 +120,7 @@
     <div class="bawah3">
         <p>Jurusan</p>
         <br>
-        <p>{{ $item->kelas }}</p>
+        <p>{{ $item-> ruang }}</p>
     </div>
     @endforeach
     <script type="module"

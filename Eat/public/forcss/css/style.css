@@ -202,6 +202,20 @@ body{
     left: 80%;
 }
 
+.k{
+  position: absolute;
+  left: 88%;
+  bottom: 110%;
+  font-size: 120%;
+  text-decoration: seashell;
+  color: seashell;
+  background-color: #205295;
+  padding: 0.2%;
+  border-radius: 3px;
+  width: 15%;
+  font-weight: bolder;
+}
+
 .z span{
   position: absolute;
   top: 85%;
@@ -377,4 +391,8 @@ p{
     background-color: antiquewhite;
     top: 94%;
     left: 90%;
+}
+
+.a2{
+  font-size: 100%; 
 }

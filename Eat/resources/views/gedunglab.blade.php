@@ -33,9 +33,10 @@
         <hr>
         <h2>Lantai 2</h2>
         <div class="center">
-
-
+            <a href="{{ url('tambah') }}" class="k"><span class="material-symbols-outlined">add</span>Tambah Data</a> 
             @foreach ($dtgedunglab as $item)
+
+
             <div class="square">
                 <div class="h1">Ruang   {{ $item->ruang }}</div>
                 <div class="oi">
@@ -43,7 +44,7 @@
                         <h2>Kelas : <br> {{ $item->kelas }}</h2>
                         <h2>Jam Belajar : <br> {{ $item->jammulai }} - {{ $item->jamakhir }}</h2>
                     <a href="{{ url('delete',$item->id) }}" class="w"><span class="material-symbols-outlined">delete</span></a>
-                    <a href="{{ route('tambah') }}" class="z"><span class="material-symbols-outlined">add</span></a> 
+                    <a href="" class="z"><span class="material-symbols-outlined">edit</span></a> 
                 </div>
             </div>
             @endforeach
