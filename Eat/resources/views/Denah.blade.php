@@ -37,7 +37,10 @@
         <div class="nao">
             <h1>Gedung Teori</h1>
         <h2>Lantai 1</h2>
-        <a href="welcome" class="a6"><button>Ruang 1</button></a>
+        @foreach ($dtgedunglab as $item)
+            
+        <a href="#" class="a6"><button>{{ $item->ruang->ruang }}</button></a>
+        @endforeach
         <a href="#" class="a6"><button>Ruang 2</button></a>
         <a href="#" class="a6"><button>Ruang 3</button></a>
         <a href="#" class="a6"><button>Ruang 4</button></a>
@@ -106,23 +109,23 @@
         <div class="sdaa"></div>   
     </div>
     <div class="bawah">
-        @foreach ($dtgedunglab as $item)
+        
             
         <p>Ruang 28</p>
         <br>
-        <p>{{ $item->id }}</p>
+        <p></p>
     </div>
     <div class="bawah2">
         <p>Jam Belajar</p>
         <br>
-        <p>{{ $item->jammulai }} &nbsp; {{ $item->jamakhir }}</p>
+        <p></p>
     </div>
     <div class="bawah3">
         <p>Jurusan</p>
         <br>
-        <p>{{ $item-> ruang }}</p>
+        <p></p>
     </div>
-    @endforeach
+    
     <script type="module"
     src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
 	  </script>

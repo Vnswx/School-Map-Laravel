@@ -58,7 +58,7 @@ body{
     color: #7286D3;
     font-weight: bold;
     --b: 0.1em;   /* the thickness of the line */
-    --c: #345B63; /* the color */
+    --c: #00d5ff; /* the color */
     
     color: #0000;
     padding-block: var(--b);
@@ -171,8 +171,9 @@ body{
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; 
-  left: 2%;
+  left: 2.3%;
   margin-left: 2%;
+  border-radius: 15px;
 }
 
 
@@ -393,6 +394,63 @@ p{
     left: 90%;
 }
 
-.a2{
+/* .a2{
   font-size: 100%; 
+}
+
+nav{
+  position: absolute;
+  top: 90%;
+}
+
+.pagination{
+  display: flexbox;
+} */
+
+.pagination li{
+  float: left;
+  list-style-type: none;
+  margin:5px;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.page-itemactive {
+  background-color: #205295;
+  color: white;
+  border-radius: 40px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 40px;
+}
+
+.pagination span{
+  padding: 8px 16px;
+  text-decoration: none;
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination{
+  position: absolute;
+  top: 75%;
+  left: 6%;
+  font-size: 144%;
+  font-family:  'Signika', sans-serif;
+  font-weight: bold;
+}
+
+nav{
+  background-color: #C8C8C8;
 }

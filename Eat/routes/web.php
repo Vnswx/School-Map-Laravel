@@ -15,11 +15,14 @@ use App\Http\Controllers\GedunglabControllers;
 */
 
 Route::get('/', function (){
-    return view('Login');
+    return view('FolderDatabase.login');
 });
 
+
+
+
 Route::get('/denah', [GedunglabControllers::class, 'denah'])->name('denah');
-Route::get('/gedunglab', [GedunglabControllers::class, 'index'])->name('gedunglab');
-Route::get('/tambah', [GedunglabControllers::class, 'create'])->name('tambah');
-Route::post('/simpan', [GedunglabControllers::class, 'store'])->name('simpan');
+Route::get('/gedung/{gedung}', [GedunglabControllers::class, 'index'])->name('gedunglab');
+Route::get('/tambah/{gedung}', [GedunglabControllers::class, 'create'])->name('tambah');
+Route::post('/simpan/{gedung}', [GedunglabControllers::class, 'store'])->name('simpan');
 Route::get('/delete/{id}', [GedunglabControllers::class, 'destroy'])->name('delete');

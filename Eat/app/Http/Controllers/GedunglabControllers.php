@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\gedunglab;
 use Illuminate\Http\Request;
 use App\Models\gedunglab as enter;
+use App\Models\ruang;
 
 class GedunglabControllers extends Controller
 {
@@ -13,12 +14,11 @@ class GedunglabControllers extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($gedung)
     {
-        $dtgedunglab = enter::all();
-        return view('gedunglab', compact('dtgedunglab'));
+        $dtgedunglab = enter::with('ruang')->where('gedung', $gedung)->paginate(4);
+        return view('FolderDatabase/'.$gedung, compact('dtgedunglab'));
     }
-
     public function denah()
     {
         $dtgedunglab = enter::all();
@@ -30,9 +30,10 @@ class GedunglabControllers extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create($gedung)
     {
-        return view('tambah');
+        $dtgedunglab = ruang::all();
+        return view('FolderDatabase.tambah', compact('dtgedunglab', 'gedung'));
     }
 
     /**
@@ -41,21 +42,22 @@ class GedunglabControllers extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, $gedung)
     {
         // dd($request->all());
         enter::create([
             'id' => $request->id,
-            'ruang' => $request->ruang,
             'walas' => $request->walas,
+            'ruang_id' => $request->ruang_id,
             'kelas' => $request->kelas,
             'jammulai' => $request->jammulai,
             'jamakhir' => $request->jamakhir,
+            'gedung' => $gedung
         ]);
 
-        return redirect('gedunglab');
+        return redirect('/gedung/'.$gedung);
     }
-
+    
     /**
      * Display the specified resource.
      *

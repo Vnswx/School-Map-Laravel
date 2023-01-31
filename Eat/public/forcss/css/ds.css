@@ -1,0 +1,226 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #2C3E50;
+}
+
+.nav{
+    top: 0;
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    background-color: #2C3E50;
+}
+
+.nav h1{
+    top: 0%;
+    position: relative;
+    font-size: 170%;
+    left: 25%;
+    font-family: 'Signika', sans-serif;
+    color: white;
+}
+
+.nav img{
+    left: 5%;
+    top: 2%;
+    position: absolute;
+    width: 15%;
+    height: 5%;
+}
+
+
+.nav h2{
+    top: 20%;
+    position: relative;
+    left: 35%;
+    font-size: 120%;
+    font-family: 'Signika', sans-serif;
+    color: white;
+}
+
+.nav hr{
+    position: relative;
+    top: 20%;
+}
+
+.nav a{
+    position: relative;
+    display: block;
+    margin-bottom: 10%;
+    font-size: 30px;
+    /* left: 35%; */
+    padding-left: 20%;
+    top: 25%;
+    font-family: 'Signika', sans-serif;
+    text-decoration: none;
+    color: #7286D3;
+    font-weight: bold;
+    --b: 0.1em;   /* the thickness of the line */
+    --c: #00d5ff; /* the color */
+    
+    color: #0000;
+    padding-block: var(--b);
+    background: 
+      linear-gradient(var(--c) 50%, white 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+      linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+}
+
+.nav a:hover{
+    --_p: 100%;
+    --_s: .3s;
+}
+
+.nav a:focus{
+    background-color: #205295;
+}
+
+.nav p{
+    position: relative;
+    font-size: 100%;
+    top: 40%;
+    padding-left: 15.5%;
+    color: grey;
+}
+
+                        /* Batas Temp */
+
+.container{
+    position: absolute;
+    background-color: white;
+    left: 20%;
+    top: 0;
+    width: 80%;
+    border-top-left-radius: 4%;
+    border-bottom-left-radius: 4%;
+    height: 100%;
+}
+
+.container hr{
+    position: relative;
+    top: 15%;
+    width: 80%;
+    
+}
+
+.A1{
+position: absolute;
+width: 25%;
+height: 17.8%;
+left:   10%;
+top: 20%;
+box-shadow: 0px 10px  10px black;
+}
+
+.A1:hover{
+    -webkit-transform: translate(20px, -10px);
+    -ms-transform: translate(10px, -10px);
+    transform: translate(10px, -10px);
+    -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.A2:hover{
+    -webkit-transform: translate(20px, -10px);
+    -ms-transform: translate(10px, -10px);
+    transform: translate(10px, -10px);
+    -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.A3:hover{
+    -webkit-transform: translate(20px, -10px);
+    -ms-transform: translate(10px, -10px);
+    transform: translate(10px, -10px);
+    -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.A2{
+    position: absolute;
+    width: 25%;
+    height: 17.8%;
+    left: 40%;
+    top: 20%;
+    box-shadow: 0px 10px  10px black;
+}
+
+.A3{
+    position: absolute;
+    width: 25%;
+    height: 17.8%;
+    left: 67.5%;
+    top: 20%;
+    box-shadow: 0px 10px  10px black;
+}
+
+.B1{
+    box-sizing: border-box;
+
+    position: absolute;
+    left:   10%;
+    top: 20%;   
+}
+
+.B2{
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 38.7%;
+    top: 20%;
+}
+
+.B3{
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 67.5%;
+    top: 20%;
+}
+
+.AT1{
+    left: 10%;
+    top: 20%;
+}
+
+
+.container button{
+    position: absolute;
+    left: 75%;
+    top: 80%;
+    width: 15%;
+    height: 5%;
+    font-family: 'Signika', sans-serif;
+    font-size: 110%;
+    font-weight: bold;
+    background-color: grey;
+    border-radius: 9%;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+.container button:hover{
+    background-color: #7286D3;
+}
+
+.center{
+    position: absolute;
+    top: 32%;
+    left: 10%;
+    /* width: 80%;
+    height: 50%; */
+    background-color: white;
+    display: flex;
+    left: 7%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans');
+
+.kotak h2{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}

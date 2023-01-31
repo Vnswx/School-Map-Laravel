@@ -10,14 +10,19 @@
 <body>
     <div class="container">
         <h4 class="y">Lantai 2</h4>
-        <h4 class="a">Gedung Teori</h4>
+        <h4 class="a">@if($gedung == 'gedungrps'){{'Gedung Rps'}} @elseif($gedung == 'gedungteori'){{ 'Gedung Teori' }} @endif</h4>
         <hr>
-        <form action="{{ route('simpan') }}" method="post">
+        <form action="/simpan/{{ $gedung }}" method="post">
             {{ csrf_field() }}
             <label for="0" class="c">Ruang:</label>
             <br>
             <br>
-            <input type="text" name="ruang" id="ruang" placeholder="Ruang">
+            <select name="ruang_id" id="ruang_id">
+                <option disabled value>Pilih Ruang</option>
+                @foreach ($dtgedunglab as $item)
+                <option value="{{ $item->id }}">{{ $item->ruang }}</option>
+                @endforeach
+            </select>
             <br>
             <br>
             <br>
@@ -46,6 +51,7 @@
             <br>
             <br>
             <input class="A2" type="number" id="jamakhir" name="jamakhir" placeholder="Jam Akhir">
+            
             <button type="submit">Simpan Data</button>
         </form>
     </div>

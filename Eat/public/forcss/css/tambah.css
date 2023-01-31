@@ -59,6 +59,21 @@ form input{
     background-color: aliceblue;
 }
 
+form select{
+    position: absolute;
+    left: 20%;
+    width: 23%;
+    height: 8%;
+    border-radius: 20px;
+    border-color: rgb(187, 187, 187);
+    text-align: center;
+    background-color: aliceblue;
+}
+
+form option{
+    border-radius: 20px;
+}
+
 .A1{
     position: absolute;
     width: 8%;

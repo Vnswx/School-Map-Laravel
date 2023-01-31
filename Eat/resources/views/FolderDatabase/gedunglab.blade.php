@@ -20,10 +20,10 @@
 
         <hr>
 
-        <a href="#"><span class="material-symbols-outlined">database</span>  Dashboard</a>
-        <a href="{{ url('gedungteori') }}"><span class="material-symbols-outlined">domain</span>  Gedung Teori</a>
-        <a href="#"><span class="material-symbols-outlined">labs</span>  Gedung Lab</a>
-        <a href="#"><span class="material-symbols-outlined">location_away</span>  Gedung RPS</a>
+        <a href="/gedung/fash"><span class="material-symbols-outlined">database</span>  Dashboard</a>
+        <a href="/gedung/gedungteori"><span class="material-symbols-outlined">domain</span>  Gedung Teori</a>
+        <a href="/gedung/gedunglab"><span class="material-symbols-outlined">labs</span>  Gedung Lab</a>
+        <a href="/gedung/gedungrps"><span class="material-symbols-outlined">location_away</span>  Gedung RPS</a>
         <p>Developed by SMK Taruna Bhakti</p>
     </div>
 
@@ -33,21 +33,26 @@
         <hr>
         <h2>Lantai 2</h2>
         <div class="center">
-            <a href="{{ url('tambah') }}" class="k"><span class="material-symbols-outlined">add</span>Tambah Data</a> 
+            <a href="/tambah/gedunglab" class="k"><span class="material-symbols-outlined">add</span>Tambah Data</a> 
             @foreach ($dtgedunglab as $item)
-
+            
 
             <div class="square">
-                <div class="h1">Ruang   {{ $item->ruang }}</div>
+                <div class="h1">Ruang   {{ $item->ruang->ruang }}</div>
                 <div class="oi">
-                        <h2>Nama Walas : <br> {{ $item->walas }}</h2>
-                        <h2>Kelas : <br> {{ $item->kelas }}</h2>
-                        <h2>Jam Belajar : <br> {{ $item->jammulai }} - {{ $item->jamakhir }}</h2>
+                    <h2>Nama Walas : <br> {{ $item->walas }}</h2>
+                    <h2>Kelas : <br> {{ $item->kelas }}</h2>
+                    <h2>Jam Belajar : <br> {{ $item->jammulai }} - {{ $item->jamakhir }}</h2>
                     <a href="{{ url('delete',$item->id) }}" class="w"><span class="material-symbols-outlined">delete</span></a>
                     <a href="" class="z"><span class="material-symbols-outlined">edit</span></a> 
                 </div>
             </div>
             @endforeach
-                
-</body>
+        </div>
+        
+        {{ $dtgedunglab->links() }}
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    </body>
 </html>
