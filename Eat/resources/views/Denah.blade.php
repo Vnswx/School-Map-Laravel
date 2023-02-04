@@ -95,10 +95,10 @@
     <div class="asd">
         <p>Lab Cobaan</p>
             <div class="sad">
-                <model-viewer src="{{ asset('forcss/3d/Kelas.gltf') }}" alt="Denah" shadow-intensity="2" camera-controls auto-rotate ar>
-                    <button id="hotspotButton"
+                <model-viewer src="{{ asset('forcss/3d/Lantai1.gltf') }}" alt="Denah" shadow-intensity="2" camera-controls auto-rotate ar>
+                    {{-- <button id="hotspotButton"
                     slot="hotspot-one"
-                    data-position="0.16 0.1 0.17" data-normal="-0.07 0.97 0.23">OOMaga</button>
+                    data-position="0.16 0.1 0.17" data-normal="-0.07 0.97 0.23">OOMaga</button> --}}
                 </model-viewer>
     </div>
     </div>
