@@ -19,20 +19,20 @@ body{
 
 .pulse{
     position: absolute;
-    top: 65%;
+    top: 45%;
     left: 16%;
     width: 20%;
     height: 7%;
     overflow: hidden;
-    color: #333;
-    background-color: #205295;
+    color: #DDDDDD;
+    background-color: #2C3E50;
     animation: ease-in-out 0.5;
     font-size: large;
     font-weight: bolder;
 }
 
 .pulse:hover{
-    background-color: #6FEDD6;
+    background-color: #2f5780;
 	color: white;
 	transition: 0.5s;
 	cursor: pointer;
@@ -49,14 +49,14 @@ form{
 .col-4{
     position: absolute;
     left: 10%;
-    margin-top: 14%;
+    margin-top: 8%;
 }
 
 
 .l2{
     position: absolute;
     left: 13%;
-    margin-top: 11%;
+    margin-top: 6%;
     font-size: 140%;
 }
 
@@ -98,8 +98,8 @@ input[type="password"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; w
 
 .imgs{
     position: absolute;
-    left: 52%;
-    top: 10%;
+    left: 57%;
+    top: 15%;
     opacity: 0.3;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
