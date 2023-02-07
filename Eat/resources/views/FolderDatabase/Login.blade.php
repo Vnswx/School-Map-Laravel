@@ -17,6 +17,8 @@
                     <i></i>
                   </span>
               </div>
+              <br>
+              <br>
               <label class="l2" for="effectx-7">Password:</label>
               <div class="col-4">
                 <input class="effect-7" id="os" type="password" placeholder="Password">
@@ -25,6 +27,7 @@
                   </span>
               </div>
             </form>
+            <br>
             <button class="pulse">Login</button>
 
             <img class="imgs" src="{{ asset('forcss/img/logo-tb.png') }}" alt="">

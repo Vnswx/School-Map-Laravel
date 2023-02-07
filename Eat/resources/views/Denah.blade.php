@@ -19,6 +19,15 @@
 
     <!--  OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+   <!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+
+<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<!-- Magnific Popup core JS file -->
+<script src="magnific-popup/jquery.magnific-popup.js"></script>
+
 
     <!--  OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
  <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script> 
@@ -39,7 +48,7 @@
         <h2>Lantai 1</h2>
         @foreach ($dtgedunglab as $item)
             
-        <a href="#" class="a6"><button>{{ $item->ruang->ruang }}</button></a>
+        <a href="welcome" class="a6"><button>{{ $item->ruang->ruang }}</button></a>
         @endforeach
         <a href="#" class="a6"><button>Ruang 1</button></a>
         <a href="#" class="a6"><button>Ruang 2</button></a>
@@ -104,9 +113,18 @@
     </div>
     </div>
     <div class="minimap">
-        <video controls>
-            <source src="{{ asset('forcss/video/Earth.mp4') }}" type="video/mp4  ">
-        </video>
+      
+	<div class="section full-height">
+        <input class="modal-btn" type="checkbox" id="modal-btn" name="modal-btn"/>
+        <label for="modal-btn">Open Modal <i class="uil uil-expand-arrows"></i></label> 		
+        <div class="modal">		
+            <div class="modal-wrap">	
+              <img src="{{ asset('forcss/img/4.jpeg') }}" alt="">	
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>	          		
+            </div>			          		
+        </div>	
+          <img src="{{ asset('forcss/img/4.jpeg') }}" alt="">
+  </div>
         <div class="sdaa"></div>   
     </div>
     <div class="bawah">
