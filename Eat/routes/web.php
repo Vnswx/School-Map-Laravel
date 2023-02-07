@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\GedunglabControllers;
 
 /*
@@ -20,8 +21,9 @@ Route::get('/', function (){
 
 
 
-
 Route::get('/denah', [GedunglabControllers::class, 'denah'])->name('denah');
+Route::get('/login', [LoginController::class, 'login'])->name('login');
+Route::get('/postlogin', [loginController::class, 'postlogin'])->name('postlogin');
 Route::get('/gedung/{gedung}', [GedunglabControllers::class, 'index'])->name('gedunglab');
 Route::get('/tambah/{gedung}', [GedunglabControllers::class, 'create'])->name('tambah');
 Route::post('/simpan/{gedung}', [GedunglabControllers::class, 'store'])->name('simpan');

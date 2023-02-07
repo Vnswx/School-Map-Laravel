@@ -16,7 +16,7 @@
     <div class="nav">
         <img src="{{ asset('forcss/img/Group 705.png') }}" alt="">
         <h1>SMK Taruna Bhakti</h1>
-        <h2>Admin Guru</h2>
+        <h2>Hi! {{ Auth::user()->name ?? 'none' }}</h2>
 
         <hr>
 

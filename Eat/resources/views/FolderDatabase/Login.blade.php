@@ -9,26 +9,24 @@
 </head>
 <body>
     <div class="container">
-        <form action="">
+        <form action="{{ route('postlogin') }}">
+          {{ csrf_field() }}
             <label class="l1" for="effect-7">Email:</label>
-            <div class="col-3">
-                <input class="effect-7" type="Email" placeholder="Email">
+              <div class="col-3">
+                <input class="effect-7" type="Email" name="email" placeholder="Email">
                   <span class="focus-border">
                     <i></i>
                   </span>
               </div>
-              <br>
-              <br>
-              <label class="l2" for="effectx-7">Password:</label>
+            <label class="l2" for="effectx-7">Password:</label>
               <div class="col-4">
-                <input class="effect-7" id="os" type="password" placeholder="Password">
+                <input class="effect-7" id="os" type="password" name="password" placeholder="Password">
                   <span class="focus-border">
                     <i></i>
                   </span>
               </div>
-            </form>
-            <br>
-            <button class="pulse">Login</button>
+              <button class="pulse">Login</button>
+        </form>
 
             <img class="imgs" src="{{ asset('forcss/img/logo-tb.png') }}" alt="">
             <img class="kik" src="{{ asset('forcss/img/maskot1.png') }}" alt="">
