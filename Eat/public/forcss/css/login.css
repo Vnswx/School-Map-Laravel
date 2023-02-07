@@ -17,13 +17,13 @@ body{
 }
 
 
-.pulse{
-    position: absolute;
-    top: 55%;
-    left: 16%;
+button{
+    position: fixed;
+    top: 50%;
+    right: 60%;
     width: 20%;
-    height: 7%;
-    overflow: hidden;
+    height: 6%;
+    border-radius: 10px;
     color: #DDDDDD;
     background-color: #2C3E50;
     animation: ease-in-out 0.5;
@@ -49,14 +49,14 @@ form{
 .col-4{
     position: absolute;
     left: 10%;
-    margin-top: 8%;
+    margin-top: 10%;
 }
 
 
 .l2{
     position: absolute;
     left: 13%;
-    margin-top: 6%;
+    margin-top: 8%;
     font-size: 140%;
 }
 
