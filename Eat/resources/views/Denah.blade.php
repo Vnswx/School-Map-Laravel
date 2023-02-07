@@ -41,6 +41,7 @@
             
         <a href="#" class="a6"><button>{{ $item->ruang->ruang }}</button></a>
         @endforeach
+        <a href="#" class="a6"><button>Ruang 1</button></a>
         <a href="#" class="a6"><button>Ruang 2</button></a>
         <a href="#" class="a6"><button>Ruang 3</button></a>
         <a href="#" class="a6"><button>Ruang 4</button></a>

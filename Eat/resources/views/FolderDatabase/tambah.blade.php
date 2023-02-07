@@ -9,7 +9,8 @@
 </head>
 <body>
     <div class="container">
-        <h4 class="y">Lantai 2</h4>
+        <h4 class="y">Tambah</h4>
+        <h4 class="x">Gedung RPS</h4>
         <h4 class="a">@if($gedung == 'gedungrps'){{'Gedung Rps'}} @elseif($gedung == 'gedungteori'){{ 'Gedung Teori' }} @endif</h4>
         <hr>
         <form action="/simpan/{{ $gedung }}" method="post">
