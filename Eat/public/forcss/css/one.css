@@ -12,6 +12,7 @@ body{
 }
 
 .nav{
+  
     
     position: absolute;
     width: 24%;
@@ -49,7 +50,11 @@ body{
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.85);
     height: 36px;
+<<<<<<< HEAD
+    width: 313px;
+=======
     width: 68%;
+>>>>>>> edac823c80a7e04b128dbfff52fe921d10800f05
     text-align: left;   
     padding: 7px;
     background: #D8E3E7;
@@ -86,25 +91,23 @@ body{
     font-weight: bold;
     background-color: #2C3E50;
     
-    box-sizing: border-box;
-    border: 2px solid grey 85px;
-    height: 5%;
+    height: 110%;
     width: 68%;
     text-align: center;
     padding: 10px;
     margin-bottom: -5.5%;
-    margin-top: 4.9%;
+    /* margin-top: 4.9%; */
 }
 
 .nav button:focus{
     color: white;
-    background-color: #009EFF;
+    background-color: #345B63;
 }
 
 .nav a{
     cursor: default;
     text-decoration: none;
-    color: #009EFF;
+    color: #345B63;
     
 }
 
@@ -124,7 +127,7 @@ body{
 .sub{
     position: absolute;
     width: 24%;
-    height: 5.3%;
+    height: 10%;
     left: 0px;
     top: 0%;
 
@@ -163,7 +166,7 @@ body{
     height: 65%;
     left: 34%;
     top: 5%;
-
+    overflow: hidden;
     background: #FFFFFF;
     box-shadow: 9px 9px 4px rgba(0, 0, 0, 0.25);
     border-radius: 17px;
@@ -212,6 +215,8 @@ background: #E8E2E2;
 }
 .nao{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
     top: 10 px;
 }
 .sad{
@@ -483,8 +488,13 @@ p{
   display: block;
   width: 100%;
   height: auto;
+
 }
-.modal-wrap p {
+.ons{
+    font-size: 130%;
+    padding: 0 0 0 30px;
+}
+.ons2 {
   padding: 20px 30px 0 30px;
 }
 .modal-btn:checked ~ .modal .modal-wrap{

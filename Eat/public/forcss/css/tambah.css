@@ -145,7 +145,7 @@ form{
 
 button{
     position: absolute;
-    top: 100%;
+    top: 77%;
     left: 50%;
     width: 20%;
     height: 15%;
@@ -159,7 +159,7 @@ button{
 }
 
 button:hover{
-    background-color: #386694;
+    background-color: #345B63;
 	color: white;
 	transition: 0.5s;
 	cursor: pointer;
