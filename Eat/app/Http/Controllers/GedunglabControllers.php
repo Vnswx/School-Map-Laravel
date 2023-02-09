@@ -23,7 +23,7 @@ class GedunglabControllers extends Controller
     public function index2($gedung)
     {
         $dtgedunglab = enter::all();
-        $thisgedung = enter::with('ruang')->where('ruang_id', $gedung)->get();
+        $thisgedung = enter::with('ruang', 'lantai')->where('ruang_id', 'lantai_id', $gedung)->get();
         // dd($thisgedung);
         return view('FolderDatabase/12', compact('dtgedunglab', 'thisgedung'));
     }
