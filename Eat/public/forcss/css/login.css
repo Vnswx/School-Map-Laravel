@@ -17,6 +17,7 @@ body{
 }
 
 
+<<<<<<< HEAD
 .pulse{
     position: absolute;
     width: 21.5%;
@@ -29,6 +30,20 @@ body{
     color: #bdbdbd;
     border: 1px solid rgba(255, 255, 255, 0.85);
     border-radius: 43px;
+=======
+button{
+    position: fixed;
+    top: 50%;
+    right: 60%;
+    width: 20%;
+    height: 6%;
+    border-radius: 10px;
+    color: #DDDDDD;
+    background-color: #2C3E50;
+    animation: ease-in-out 0.5;
+    font-size: large;
+    font-weight: bolder;
+>>>>>>> edac823c80a7e04b128dbfff52fe921d10800f05
 }
 
 .pulse:hover{
@@ -49,7 +64,7 @@ form{
 .col-4{
     position: absolute;
     left: 10%;
-    margin-top: 8%;
+    margin-top: 10%;
 }
 
 
@@ -61,7 +76,7 @@ form{
 .l2{
     position: absolute;
     left: 13%;
-    margin-top: 6%;
+    margin-top: 8%;
     font-size: 140%;
 }
 
@@ -121,9 +136,9 @@ input[type="password"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; w
 
 .kik{
     position: absolute;
-    width: 10%;
+    width: 8%;
     left: 89%;
-    top: 76%;
+    top: 81%;
     transition: all 0.2s;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;

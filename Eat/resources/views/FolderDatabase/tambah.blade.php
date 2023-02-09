@@ -15,6 +15,18 @@
         <hr>
         <form action="/simpan/{{ $gedung }}" method="post">
             {{ csrf_field() }}
+            <label for="0" class="c">Lantai:</label>
+            <br>
+            <br>
+            <select name="lantai_id" id="lantai_id">
+                <option disabled value>Pilih Lantai</option>
+                @foreach ($lantai as $item)
+                <option value="{{ $item->id }}">{{ $item->lantai }}</option>
+                @endforeach
+            </select>
+            <br>
+            <br>
+            <br>
             <label for="0" class="c">Ruang:</label>
             <br>
             <br>

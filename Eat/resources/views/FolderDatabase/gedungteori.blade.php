@@ -31,13 +31,13 @@
     <div class="container">
         <h1>Gedung Teori</h1>
         <hr>
-        <h2>Lantai 2</h2>
         <div class="center">
             <a href="/tambah/gedungteori" class="k"><span class="material-symbols-outlined">add</span>Tambah Data</a> 
             @foreach ($dtgedunglab as $item)
             
-
+            
             <div class="square">
+                <h2>Lantai {{ $item->lantai->lantai }}</h2>
                 <div class="h1">Ruang   {{ $item->ruang->ruang }}</div>
                 <div class="oi">
                     <h2>Nama Walas : <br> {{ $item->walas }}</h2>
