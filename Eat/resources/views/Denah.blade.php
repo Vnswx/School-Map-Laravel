@@ -97,7 +97,7 @@
         <p>Lab Cobaan</p>
             <div class="sad">
                 <model-viewer src="{{ asset('forcss/3d/Lantai1.gltf') }}" alt="Denah" shadow-intensity="2" camera-controls auto-rotate ar>
-                    <button id="hotspotButton"
+                    <button id="hotspotButton"                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
                     slot="hotspot-one"
                     data-position="0.16 0.1 0.17" data-normal="-0.07 0.97 0.23"></button>
                 </model-viewer>
@@ -145,7 +145,7 @@
       }
     });
     </script>
-
+zz
 <script type="module">
     const modelViewer = document.querySelector("model-viewer"); window.switchSrc = (element, name) => { const base = "../Assets/Models/" + name; modelViewer.src = base + '.glb'; const size = document.querySelectorAll(".size"); size.forEach((element) => {element.classList.remove("selected");
     var colors = document.getElementById("variant"); var colorButton = colors.firstChild; while( colorButton ) { colors.removeChild( colorButton ); colorButton = colors.firstChild; }}); element.classList.add("selected"); }; document.querySelector(".sizebuttons").addEventListener('beforexrselect',

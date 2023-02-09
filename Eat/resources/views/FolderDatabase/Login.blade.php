@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
     <link rel="stylesheet" href="{{ asset('forcss/css/login.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -29,7 +32,7 @@
         </form>
 
             <img class="imgs" src="{{ asset('forcss/img/logo-tb.png') }}" alt="">
-            <img class="kik" src="{{ asset('forcss/img/maskot1.png') }}" alt="">
+            <img class="kik" src="{{ asset('forcss/img/maskot1.png') }}" alt="">  
     </div>
 </body>
 </html>

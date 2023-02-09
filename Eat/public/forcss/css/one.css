@@ -49,7 +49,7 @@ body{
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.85);
     height: 36px;
-    width: 311.5px;
+    width: 313px;
     text-align: left;   
     padding: 7px;
     background: #D8E3E7;
@@ -98,13 +98,13 @@ body{
 
 .nav button:focus{
     color: white;
-    background-color: #009EFF;
+    background-color: #345B63;
 }
 
 .nav a{
     cursor: default;
     text-decoration: none;
-    color: #009EFF;
+    color: #345B63;
     
 }
 
