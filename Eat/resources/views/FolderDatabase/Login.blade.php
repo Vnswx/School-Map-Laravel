@@ -11,28 +11,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <form action="{{ route('postlogin') }}">
-          {{ csrf_field() }}
-            <label class="l1" for="effect-7">Email:</label>
-              <div class="col-3">
-                <input class="effect-7" type="Email" name="email" placeholder="Email">
-                  <span class="focus-border">
-                    <i></i>
-                  </span>
-              </div>
-            <label class="l2" for="effectx-7">Password:</label>
-              <div class="col-4">
-                <input class="effect-7" id="os" type="password" name="password" placeholder="Password">
-                  <span class="focus-border">
-                    <i></i>
-                  </span>
-              </div>
-              <button class="pulse">Login</button>
-        </form>
+  <div class="center">
+    <h1>SMK Taruna Bhakti</h1>
+    <div class="kiri">
+      <form action="post">
+        <div class="txt_field">
+            <input type="text" required>
+            <span></span>
+            <label>Email</label>
+        </div>
+        <div class="txt_field">
+            <input type="password" required>
+            <span></span>
+            <label>Password</label>
+        </div>
 
+        <div class="pass">Forgot Password?</div>
+        <input type="submit" value="Login">
+
+        {{-- <div class="log-google">
+          <input type="submit" value="Login dengan Google">
+        </div> --}}
+    </form>
             <img class="imgs" src="{{ asset('forcss/img/logo-tb.png') }}" alt="">
-            <img class="kik" src="{{ asset('forcss/img/maskot1.png') }}" alt="">  
     </div>
+
+    <div class="kanan">
+      <img class="imgs" src="{{ asset('forcss/img/logo-tb.png') }}" alt="">
+    </div>
+</div>
+
+            {{-- <img class="imgs" src="{{ asset('forcss/img/logo-tb.png') }}" alt=""> --}}
+            {{-- <img class="kik" src="{{ asset('forcss/img/maskot1.png') }}" alt=""> --}}
 </body>
 </html>

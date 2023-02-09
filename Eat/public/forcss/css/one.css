@@ -50,11 +50,8 @@ body{
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.85);
     height: 36px;
-<<<<<<< HEAD
     width: 313px;
-=======
     width: 68%;
->>>>>>> edac823c80a7e04b128dbfff52fe921d10800f05
     text-align: left;   
     padding: 7px;
     background: #D8E3E7;
@@ -131,15 +128,15 @@ body{
     left: 0px;
     top: 0%;
 
-    background: #D8E3E7;
+    background: #FFFFFF;
 }
 
 .sub img{
     position: absolute;
     width: 15%;
     height: 90%;
-    left: 2.5%;
-    top: 2%;
+    left: 3%;
+    top: 40%;
 }
 
 .sub p{
@@ -150,7 +147,7 @@ body{
     top: -2.5px;
 
     
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: montserrat;
     font-style: normal;
     font-weight: 70%;
     font-size: 140%;
