@@ -6,6 +6,7 @@ use App\Models\gedunglab;
 use Illuminate\Http\Request;
 use App\Models\gedunglab as enter;
 use App\Models\ruang;
+use App\Models\lantai;
 
 class GedunglabControllers extends Controller
 {
@@ -16,7 +17,7 @@ class GedunglabControllers extends Controller
      */
     public function index($gedung)
     {
-        $dtgedunglab = enter::with('ruang')->where('gedung', $gedung)->paginate(4);
+        $dtgedunglab = enter::with('lantai', 'ruang')->where('gedung', $gedung)->paginate(4);
         return view('FolderDatabase/'.$gedung, compact('dtgedunglab'));
     }
     public function index2($gedung)
@@ -45,7 +46,9 @@ class GedunglabControllers extends Controller
     public function create($gedung)
     {
         $dtgedunglab = ruang::all();
-        return view('FolderDatabase.tambah', compact('dtgedunglab', 'gedung'));
+        $lantai = lantai::all();
+        $ruang = ruang::all();
+        return view('FolderDatabase.tambah', compact(['dtgedunglab', 'lantai','ruang','gedung']));
     }
 
     /**
@@ -60,6 +63,7 @@ class GedunglabControllers extends Controller
         enter::create([
             'id' => $request->id,
             'walas' => $request->walas,
+            'lantai_id' => $request->lantai_id,
             'ruang_id' => $request->ruang_id,
             'kelas' => $request->kelas,
             'jammulai' => $request->jammulai,
