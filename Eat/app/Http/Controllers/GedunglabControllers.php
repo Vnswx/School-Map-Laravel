@@ -19,10 +19,22 @@ class GedunglabControllers extends Controller
         $dtgedunglab = enter::with('ruang')->where('gedung', $gedung)->paginate(4);
         return view('FolderDatabase/'.$gedung, compact('dtgedunglab'));
     }
+    public function index2($gedung)
+    {
+        $dtgedunglab = enter::all();
+        $thisgedung = enter::with('ruang')->where('ruang_id', $gedung)->get();
+        // dd($thisgedung);
+        return view('FolderDatabase/12', compact('dtgedunglab', 'thisgedung'));
+    }
     public function denah()
     {
         $dtgedunglab = enter::all();
         return view('denah', compact('dtgedunglab'));
+    }
+    public function omagas()
+    {
+        $dtgedunglab = enter::all();
+        return view('12', compact('dtgedunglab'));
     }
 
     /**

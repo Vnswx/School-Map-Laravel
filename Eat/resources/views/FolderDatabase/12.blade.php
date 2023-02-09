@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('forcss/css/two.css') }}">
+    <link rel="stylesheet" href="{{ asset('forcss/css/one.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,7 +47,8 @@
             <h1>Gedung Teori</h1>
         <h2>Lantai 1</h2>
         @foreach ($dtgedunglab as $item)
-        <a href="{{ 'denah1/'.$item->ruang->ruang }}" class="a6"><button>{{ $item->ruang->ruang }}</button></a>
+        {{ $item->ruang->ruang }}
+        <a href="{{ $item->ruang->ruang }}" class="a6"><button>{{ $item->ruang->ruang }}</button></a>
         @endforeach
             <h1>Gedung Lab</h1>
             <h1>Gedung RPS</h1>
@@ -58,7 +59,7 @@
     <div class="asd">
         <p>Lab Cobaan</p>
             <div class="sad">
-                <model-viewer src="{{ asset('forcss/3d/Lantai1.gltf') }}" alt="Denah" shadow-intensity="2" camera-controls auto-rotate ar>
+                <model-viewer src="{{ asset('forcss/3d/Kelas.gltf ') }}" alt="Denah" shadow-intensity="2" camera-controls auto-rotate ar>
                     {{-- <button id="hotspotButton"
                     slot="hotspot-one"
                     data-position="0.16 0.1 0.17" data-normal="-0.07 0.97 0.23">OOMaga</button> --}}
@@ -87,11 +88,14 @@
         <div class="sdaa"></div>   
     </div>
     <div class="bawah">
-        <p>{{ $item->ruang->ruang }}</p>
+        
+            
+            <p>{{ $item->ruang->ruang }}</p>
+            
         <br>
+        <p></p>
     </div>
     <div class="bawah2">
-        
         <p>Jam Belajar</p>
         <br>
         <p></p>

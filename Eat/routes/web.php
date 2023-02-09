@@ -22,9 +22,11 @@ Route::get('/', function (){
 
 
 Route::get('/denah', [GedunglabControllers::class, 'denah'])->name('denah');
+Route::get('/omagas', [GedunglabControllers::class, 'omagas'])->name('omagas');
 Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::get('/postlogin', [loginController::class, 'postlogin'])->name('postlogin');
 Route::get('/gedung/{gedung}', [GedunglabControllers::class, 'index'])->name('gedunglab');
+Route::get('/denah1/{gedung}', [GedunglabControllers::class, 'index2'])->name('denah1');
 Route::get('/tambah/{gedung}', [GedunglabControllers::class, 'create'])->name('tambah');
 Route::post('/simpan/{gedung}', [GedunglabControllers::class, 'store'])->name('simpan');
 Route::get('/delete/{id}', [GedunglabControllers::class, 'destroy'])->name('delete');
