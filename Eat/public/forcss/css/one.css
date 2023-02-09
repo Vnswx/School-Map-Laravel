@@ -50,11 +50,8 @@ body{
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.85);
     height: 36px;
-<<<<<<< HEAD
     width: 313px;
-=======
     width: 68%;
->>>>>>> edac823c80a7e04b128dbfff52fe921d10800f05
     text-align: left;   
     padding: 7px;
     background: #D8E3E7;
