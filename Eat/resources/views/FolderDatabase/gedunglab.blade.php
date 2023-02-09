@@ -37,7 +37,7 @@
             
 
             <div class="square">
-            <h2>Lantai {{ $item->lantai->lantai }}</h2>
+            {{-- <h2>Lantai {{ $item->lantai->lantai }}</h2> --}}
                 <div class="h1">Ruang   {{ $item->ruang->ruang }}</div>
                 <div class="oi">
                     <h2>Nama Walas : <br> {{ $item->walas }}</h2>

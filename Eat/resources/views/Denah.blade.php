@@ -45,8 +45,8 @@
     <div class="nav">
         <div class="nao">
             <h1>Gedung Teori</h1>
-        <h2>Lantai 1</h2>
-        @foreach ($dtgedunglab as $item)
+            @foreach ($dtgedunglab as $item)
+        {{-- <h2>{{ $item->lantai->lantai }}</h2> --}}
         <a href="{{ 'denah1/'.$item->ruang->ruang }}" class="a6"><button>{{ $item->ruang->ruang }}</button></a>
         @endforeach
             <h1>Gedung Lab</h1>
