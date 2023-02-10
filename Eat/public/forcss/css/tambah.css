@@ -159,7 +159,7 @@ button{
 }
 
 button:hover{
-    background-color: #386694;
+    background-color: #345B63;
 	color: white;
 	transition: 0.5s;
 	cursor: pointer;

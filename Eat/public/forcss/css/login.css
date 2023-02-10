@@ -1,11 +1,13 @@
 body{
-    padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    background-color: #2C3E50;
+    padding: 0;
+    font-family: montserrat;
+    background: #112031;
+    height: 100vh;
+    overflow: hidden;
 }
 
-.container{
+.center{
     position: absolute;
     top: 10%;
     width: 85%;
@@ -16,120 +18,74 @@ body{
     background-color: whitesmoke;
 }
 
-
-button{
-    position: fixed;
-    top: 50%;
-    right: 60%;
-    width: 20%;
-    height: 6%;
-    border-radius: 10px;
-    color: #DDDDDD;
-    background-color: #2C3E50;
-    animation: ease-in-out 0.5;
-    font-size: large;
-    font-weight: bolder;
+.center h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
 }
 
-.pulse:hover{
-    background-color: #2f5780;
-	color: white;
-	transition: 0.5s;
-	cursor: pointer;
+.center form {
+    padding: 0 40px;
+    box-sizing: border-box;
 }
 
-form{
+form .txt_field {
     position: relative;
-    top: 17%;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+    width: 30%;
+}
+
+.txt_field input {
+    width: 50%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+
+}
+
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
     left: 0;
+    width: 100%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
 }
 
-.col-4{float: left; width: 27.33%; margin: 40px 3%; position: relative;} 
-
-.col-4{
-    position: absolute;
-    left: 10%;
-    margin-top: 10%;
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: -5px;
+    color: #2691d9;
 }
 
-
-.l2{
-    position: absolute;
-    left: 13%;
-    margin-top: 8%;
-    font-size: 140%;
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+    width: 100%;
 }
 
-.l1{
-    position: absolute;
-    left: 13%;
-    font-size: 140%;
+.pass {
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
 }
 
-.col-3{
-    position: absolute;
-    left: 10%;
-    display: block;
-}
-
-
-:focus{outline: none;}
-
-.col-3{float: left; width: 27.33%; margin: 40px 3%; position: relative;} /* necessary to give position: relative to parent. */
-input[type="email"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
-
-input[type="password"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
-
-.effect-7,
-.effect-8,
-.effect-9{border: 1px solid #ccc; padding: 7px 14px 9px; transition: 0.4s;}
-
-.effect-7 ~ .focus-border:before,
-.effect-7 ~ .focus-border:after{content: ""; position: absolute; top: 0; left: 50%; width: 0; height: 2px; background-color: #205295; transition: 0.4s;}
-.effect-7 ~ .focus-border:after{top: auto; bottom: 0;}
-.effect-7 ~ .focus-border i:before,
-.effect-7 ~ .focus-border i:after{content: ""; position: absolute; top: 50%; left: 0; width: 2px; height: 0; background-color: #205295; transition: 0.6s;}
-.effect-7 ~ .focus-border i:after{left: auto; right: 0;}
-.effect-7:focus ~ .focus-border:before,
-.effect-7:focus ~ .focus-border:after{left: 0; width: 100%; transition: 0.4s;}
-.effect-7:focus ~ .focus-border i:before,
-.effect-7:focus ~ .focus-border i:after{top: 0; height: 100%; transition: 0.6s;}
-
-
-.imgs{
-    position: absolute;
-    left: 57%;
-    top: 15%;
-    opacity: 0.3;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    transition: all 0.2s;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-}
-
-.imgs:hover{
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-}
-
-.kik{
-    position: absolute;
-    width: 8%;
-    left: 89%;
-    top: 81%;
-    transition: all 0.2s;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-}
-
-.kik:hover{
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
+.pass:hover{
+    text-decoration: underline;
 }
