@@ -6,7 +6,7 @@ Make the ideal learning environment easier to navigate and plan by personalizing
 
 ## Description
 
-We have a cutting-edge technology called the 3D School Map Creator that helps you create engaging learning environments. With the help of this program, users may construct realistic and accurate 3D models of school campuses, complete with outdoor spaces, buildings, and classrooms. This application offers an easy-to-use and engaging experience for educators, administrators, and students alike, whether they are designing a classroom layout, supervising campus growth, or simply visiting a new school. 
+Welcome to our 3D School Map website! Our platform is designed to make navigation easier for students, teachers, and visitors. With detailed 3D models of school buildings, you can explore the campus virtually and find your way around with ease. Whether you're a new student getting to know your surroundings, a teacher planning classroom layouts, or a visitor looking for specific locations, our 3D school map provides a comprehensive and interactive experience.
 
 ## Getting Started
 
