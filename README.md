@@ -1,6 +1,6 @@
 # 3D School plan
 
-[img](https://github.com/Vnswx/School-Map-Laravel/blob/main/Eat/public/forcss/img/maskot1.png "Logo Title Text 1")
+![img](https://github.com/Vnswx/School-Map-Laravel/blob/main/Eat/public/forcss/img/maskot1.png "Logo Title Text 1")
 
 
 Simple overview of use/purpose.
