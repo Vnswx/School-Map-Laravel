@@ -18,23 +18,13 @@ We have a cutting-edge technology called the 3D School Map Creator that helps yo
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* ``` composer install ```
 
-### Executing program
+* ``` composer update ```
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+* ``` cp .env.example .env ```
 
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+* ``` php artisan key:generate ```
 
 ## Authors
 
